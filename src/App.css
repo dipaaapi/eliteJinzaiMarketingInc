@@ -1,0 +1,65 @@
+.App {
+  text-align: center;
+}
+.App-head {
+  width: 50vw;
+  text-align: left;
+  margin-bottom: 0;
+}
+.App-header {
+  background:linear-gradient(0deg, #84478D, transparent);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: black;
+}
+.App-address {
+  color: black;
+  width: 50vw;
+  text-align: left;
+  font-size: .7rem;
+  margin-bottom: 50px;
+}
+.App-form {
+  background-color: none;
+}
+.App-label {
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  background-color: white;
+  padding: 5px;
+  border-top: 1px solid white;
+  border-radius: 5px;
+}
+.App-input {
+  text-align: center;
+  width: 45vw;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid white;
+  margin-top: 0;
+}
+.App-hr {
+  margin: 0;
+}
+.App-submit {
+  color: white;
+  background-color: #3AD0FF;
+  padding: 1rem;
+  text-align: center;
+  justify-content: center;
+  filter: drop-shadow(0px 5px 3px black);
+  cursor: pointer;
+  border-radius: 10px;
+  width: 50vw;
+}
+.App-forgot, .App-non {
+  font-size: .7rem;
+  text-decoration: none;
+  color: black;
+}
