@@ -24,3 +24,20 @@ function App() {
 }
 
 export default App;
+
+import React  from 'react';
+import logo from './logo.svg';
+import "./App.css";
+import Home from './Home';
+import About from './About';
+import Projects from './Projects';
+import Contact from './Contact';
+function Home() {
+  return (
+      <div>
+        <h1>Welcome to my Website</h1>
+      </div>
+  );
+}
+
+export default Home;
