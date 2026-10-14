@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/logo.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#84478d" />
+    <meta name="description" content="Elite Jinzai Marketing Services Inc. – recruitment and placement of sales and marketing staff for the electronics and appliance industry in the Philippines." />
+    <meta property="og:title" content="Elite Jinzai Marketing Services Inc." />
+    <meta property="og:description" content="Sales and marketing staffing for the electronics and appliance industry." />
+    <meta property="og:image" content="/images/og-image.png" />
+    <meta property="og:type" content="website" />
+    <title>Elite Jinzai Marketing</title>
+    <script>
+      (function () {
+        var t = 'system';
+        try { t = localStorage.getItem('ej-theme') || t; } catch (e) {}
+        if (t === 'system') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.dataset.theme = t;
+        document.documentElement.style.colorScheme = t;
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,512 @@
+/* Portal screens: jobs, applications, requests, deployments, dashboards. Uses tokens from App.css. */
+:root {
+  --good: #1b7a3a;
+  --good-bg: #e3f5e9;
+  --info: #0b5d7a;
+  --info-bg: #def4fc;
+  --warn: #8a5300;
+  --warn-bg: #fff1d6;
+  --bad: #a3001b;
+  --bad-bg: #fde6ea;
+}
+
+:root[data-theme='dark'] {
+  --good: #8fe0a8;
+  --good-bg: #173322;
+  --info: #8fdcf5;
+  --info-bg: #10303b;
+  --warn: #ffcf7a;
+  --warn-bg: #3a2a10;
+  --bad: #ff9aab;
+  --bad-bg: #3a1820;
+}
+
+.Input,
+.Field select,
+.Field textarea {
+  font: inherit;
+  font-weight: 400;
+  padding: 10px 12px;
+  border: 1px solid var(--input-border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  width: 100%;
+}
+
+.Small {
+  font-size: 0.85rem;
+}
+
+.Stack {
+  display: grid;
+  gap: 16px;
+}
+
+.Toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.Chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.Chip {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.25s var(--ease), color 0.25s var(--ease), border-color 0.25s var(--ease);
+}
+
+.Chip--on {
+  background: var(--brand-2);
+  border-color: var(--brand-2);
+  color: #fff;
+}
+
+.Form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
+  gap: 0 16px;
+  animation: page-enter 0.35s var(--ease-out) both;
+}
+
+.Form-grid h2,
+.Field--wide {
+  grid-column: 1 / -1;
+}
+
+.Form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+/* Status pills */
+.Badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.Badge--good { background: var(--good-bg); color: var(--good); }
+.Badge--info { background: var(--info-bg); color: var(--info); }
+.Badge--warn { background: var(--warn-bg); color: var(--warn); }
+.Badge--bad { background: var(--bad-bg); color: var(--bad); }
+.Badge--muted { background: var(--tint); color: var(--muted); }
+
+.Alert--warn {
+  background: var(--warn-bg);
+  color: var(--warn);
+}
+
+.Empty {
+  margin: 0;
+  padding: 32px 16px;
+  text-align: center;
+  border: 2px dashed var(--line);
+  border-radius: var(--radius);
+  color: var(--muted);
+}
+
+/* Mission references */
+.Mission-note {
+  margin: 8px 0 0;
+  padding-left: 12px;
+  border-left: 3px solid var(--accent);
+  color: var(--muted);
+  font-style: italic;
+}
+
+.Mission-banner {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 14px 18px;
+  border-radius: var(--radius);
+  background: linear-gradient(90deg, var(--tint), var(--surface));
+  border: 1px solid var(--line);
+  color: var(--brand-2);
+}
+
+.Mission-banner p {
+  margin: 0;
+  color: var(--ink);
+}
+
+/* Dashboard */
+.Stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr));
+  gap: 16px;
+}
+
+.Stat {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.Stat strong {
+  display: block;
+  font-size: 1.6rem;
+  line-height: 1.1;
+  color: var(--heading);
+}
+
+.Stat small {
+  color: var(--muted);
+}
+
+.Funnel {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+
+.Funnel-step {
+  display: grid;
+  justify-items: center;
+  gap: 2px;
+  padding: 14px 8px;
+  border-radius: 10px;
+  text-decoration: none;
+  background: var(--info-bg);
+  color: var(--info);
+  transition: transform 0.25s var(--ease);
+}
+
+.Funnel-step:hover {
+  transform: translateY(-2px);
+}
+
+.Funnel-step strong {
+  font-size: 1.5rem;
+}
+
+.Funnel-step--interview { background: var(--warn-bg); color: var(--warn); }
+.Funnel-step--hired { background: var(--good-bg); color: var(--good); }
+.Funnel-step--rejected { background: var(--bad-bg); color: var(--bad); }
+
+.Quick {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.People {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.People li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+}
+
+/* Job / application / request cards */
+.Job {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+}
+
+.Job-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.Job-head h3 {
+  margin: 0;
+  color: var(--heading);
+}
+
+.Job-head p {
+  margin: 2px 0 0;
+}
+
+.Job-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.Job-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.App-card {
+  display: grid;
+  gap: 12px;
+}
+
+.App-card > .Btn,
+.Panel > .Btn {
+  justify-self: start;
+}
+
+/* Step tracker: Applied → Screening → Interview → Hired */
+.Steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 4px;
+}
+
+.Steps li {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.Steps li + li::before {
+  content: '';
+  position: absolute;
+  top: 14px;
+  right: 50%;
+  width: 100%;
+  border-top: 2px solid var(--line);
+}
+
+.Steps li.is-done + li::before {
+  border-color: var(--brand-2);
+}
+
+.Steps-dot {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--tint);
+  border: 2px solid var(--line);
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.Steps .is-done .Steps-dot {
+  background: var(--brand-2);
+  border-color: var(--brand-2);
+  color: #fff;
+}
+
+.Steps .is-current {
+  color: var(--heading);
+  font-weight: 700;
+}
+
+.Steps .is-current .Steps-dot {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.Steps--failed .is-current .Steps-dot {
+  background: var(--bad-bg);
+  border-color: var(--bad);
+  color: var(--bad);
+}
+
+/* Document and benefit checkboxes */
+.Docs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin: 0;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.Docs legend {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.Check {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.Check input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--brand-2);
+}
+
+.Checklist .is-ok svg { color: var(--good); }
+.Checklist .is-pending { color: var(--muted); }
+.Checklist .is-pending svg { color: var(--line); }
+
+.Meter {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--tint);
+  overflow: hidden;
+}
+
+.Meter span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--brand-2), var(--accent));
+  transition: width 0.6s var(--ease);
+}
+
+.Visits h4 {
+  margin: 4px 0;
+}
+
+.Visits ul {
+  margin: 0 0 8px;
+  padding-left: 18px;
+}
+
+.Visits small {
+  color: var(--muted);
+  margin-right: 6px;
+}
+
+.Inline-form {
+  display: flex;
+  gap: 8px;
+}
+
+/* Employee time clock */
+.Clock {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.Clock h2 {
+  margin: 0;
+}
+
+.Clock-actions {
+  display: grid;
+  justify-items: end;
+  gap: 8px;
+}
+
+.Clock-time {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--heading);
+}
+
+/* Registration: account type cards */
+.Roles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 0 0 14px;
+  padding: 0;
+  border: 0;
+}
+
+.Roles legend {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.Role {
+  position: relative;
+  display: grid;
+  gap: 2px;
+  padding: 10px 12px;
+  border: 2px solid var(--line);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: border-color 0.25s var(--ease), background-color 0.25s var(--ease);
+}
+
+.Role input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.Role small {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.Role--on {
+  border-color: var(--brand-2);
+  background: var(--tint);
+}
+
+.Role:has(input:focus-visible) {
+  outline: 3px solid var(--brand-2);
+  outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+  .Funnel {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .Clock-actions {
+    justify-items: start;
+  }
+}
+
+.Demo-panel {
+  border-style: dashed;
+}
+
+.Demo-panel code {
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: var(--tint);
+}

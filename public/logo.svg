@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <title>Elite Jinzai</title>
+  <rect width="300" height="300" rx="56" fill="#fff"/>
+  <g transform="translate(27 26)">
+    <rect x="0" y="11" width="189" height="50" fill="#8d459b"/>
+    <rect x="0" y="69" width="189" height="50" fill="#8d459b"/>
+    <rect x="0" y="127" width="189" height="51" fill="#8d459b"/>
+    <path d="M197 11h49v219l-49-49z" fill="#cdced3"/>
+    <path d="M0 186h191l50 50H0z" fill="#cdced3"/>
+  </g>
+</svg>

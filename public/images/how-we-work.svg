@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <title>How Elite Jinzai works: Recruit, Train, Deploy, Report</title>
+  <rect width="1200" height="420" fill="#f7f2f9"/>
+  <text x="600" y="64" font-size="34" font-weight="700" fill="#000" text-anchor="middle">How we work</text>
+  <text x="600" y="98" font-size="17" fill="#625b6b" text-anchor="middle">From recruitment to results on the store floor</text>
+  <line x1="180" y1="200" x2="1020" y2="200" stroke="#84478d" stroke-width="3" stroke-dasharray="10 8"/>
+  <g text-anchor="middle">
+    <g transform="translate(180 200)">
+      <circle r="62" fill="#5b2a66"/><circle cx="46" cy="-46" r="20" fill="#3ad0ff"/>
+      <text x="46" y="-39" font-size="20" font-weight="700" fill="#003b4f">1</text>
+      <g fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"><circle cx="-6" cy="-12" r="12"/><path d="M-30 26c0-14 11-24 24-24s24 10 24 24M28-12v22M17-1h22"/></g>
+      <text y="110" font-size="24" font-weight="700" fill="#5b2a66">Recruit</text>
+      <text y="140" font-size="16" fill="#625b6b">Source and screen the right people</text>
+    </g>
+    <g transform="translate(460 200)">
+      <circle r="62" fill="#5b2a66"/><circle cx="46" cy="-46" r="20" fill="#3ad0ff"/>
+      <text x="46" y="-39" font-size="20" font-weight="700" fill="#003b4f">2</text>
+      <g fill="none" stroke="#fff" stroke-width="4" stroke-linejoin="round"><path d="M-32-6 0-22l32 16L0 10z"/><path d="M-18 2v14c0 6 8 10 18 10s18-4 18-10V2"/></g>
+      <text y="110" font-size="24" font-weight="700" fill="#5b2a66">Train</text>
+      <text y="140" font-size="16" fill="#625b6b">Product knowledge and selling skills</text>
+    </g>
+    <g transform="translate(740 200)">
+      <circle r="62" fill="#5b2a66"/><circle cx="46" cy="-46" r="20" fill="#3ad0ff"/>
+      <text x="46" y="-39" font-size="20" font-weight="700" fill="#003b4f">3</text>
+      <g fill="none" stroke="#fff" stroke-width="4" stroke-linejoin="round"><path d="M-28-4 0-24l28 20v30h-56z"/><path d="M-10 26V8h20v18"/></g>
+      <text y="110" font-size="24" font-weight="700" fill="#5b2a66">Deploy</text>
+      <text y="140" font-size="16" fill="#625b6b">Place staff in partner stores</text>
+    </g>
+    <g transform="translate(1020 200)">
+      <circle r="62" fill="#5b2a66"/><circle cx="46" cy="-46" r="20" fill="#3ad0ff"/>
+      <text x="46" y="-39" font-size="20" font-weight="700" fill="#003b4f">4</text>
+      <g fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M-26-26v50h52"/><path d="M-16 12l12-12 10 10 18-20"/></g>
+      <text y="110" font-size="24" font-weight="700" fill="#5b2a66">Report</text>
+      <text y="140" font-size="16" fill="#625b6b">Track sales and results for clients</text>
+    </g>
+  </g>
+</svg>

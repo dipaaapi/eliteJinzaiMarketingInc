@@ -1,0 +1,23 @@
+services:
+  web:
+    build:
+      context: .
+      # Values come from the .env file next to this compose file
+      args:
+        VITE_COMPANY_NAME: ${VITE_COMPANY_NAME:-}
+        VITE_COMPANY_SHORT_NAME: ${VITE_COMPANY_SHORT_NAME:-}
+        VITE_COMPANY_ADDRESS: ${VITE_COMPANY_ADDRESS:-}
+        VITE_COMPANY_ADDRESS_JA: ${VITE_COMPANY_ADDRESS_JA:-}
+        VITE_COMPANY_PHONES: ${VITE_COMPANY_PHONES:-}
+        VITE_FACEBOOK_URL: ${VITE_FACEBOOK_URL:-}
+        VITE_DEMO_USER: ${VITE_DEMO_USER:-admin}
+        VITE_DEMO_PASS: ${VITE_DEMO_PASS:-admin123}
+        VITE_SESSION_KEY: ${VITE_SESSION_KEY:-}
+        VITE_DEFAULT_LANGUAGE: ${VITE_DEFAULT_LANGUAGE:-en}
+        VITE_DEFAULT_THEME: ${VITE_DEFAULT_THEME:-system}
+        VITE_DEMO_DATA: ${VITE_DEMO_DATA:-false}
+    image: elitejinzai:latest
+    container_name: elitejinzai-web
+    ports:
+      - "${WEB_PORT:-3000}:80"
+    restart: unless-stopped

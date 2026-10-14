@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Segoe UI, Calibri, Roboto, Helvetica, Arial, sans-serif">
+  <title>Elite Jinzai Marketing Services Inc.</title>
+  <!-- Social share image, in the original wordmark style. -->
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ddc6e2"/>
+      <stop offset="1" stop-color="#84478d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <text x="600" y="270" text-anchor="middle" font-size="64" font-weight="700" fill="#000">Elite Jinzai Marketing Services Inc.</text>
+  <text x="600" y="350" text-anchor="middle" font-size="28" fill="#1d1a22">Sales &amp; marketing staffing for the electronics and appliance industry</text>
+  <rect x="470" y="395" width="260" height="6" rx="3" fill="#3ad0ff"/>
+  <text x="600" y="470" text-anchor="middle" font-size="22" fill="#fff">Makati City, Philippines</text>
+</svg>

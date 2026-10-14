@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <title>Elite Jinzai mission, vision and values (draft)</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ddc6e2"/>
+      <stop offset="1" stop-color="#84478d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="600" y="78" font-size="38" font-weight="700" fill="#000" text-anchor="middle">Mission · Vision · Values</text>
+  <rect x="60" y="120" width="520" height="250" rx="20" fill="#fff"/>
+  <rect x="60" y="120" width="520" height="8" rx="4" fill="#3ad0ff"/>
+  <g transform="translate(110 190)" fill="none" stroke="#84478d" stroke-width="4"><circle r="28"/><circle r="16"/><circle r="4" fill="#84478d"/></g>
+  <text x="160" y="200" font-size="28" font-weight="700" fill="#5b2a66">Our Mission</text>
+  <text font-size="19" fill="#1d1a22"><tspan x="90" y="260">Connect brands and retailers with skilled,</tspan><tspan x="90" y="290">motivated sales and marketing people, and</tspan><tspan x="90" y="320">remove unnecessary steps in recruiting and</tspan><tspan x="90" y="350">training so staff and partners grow together.</tspan></text>
+  <rect x="620" y="120" width="520" height="250" rx="20" fill="#fff"/>
+  <rect x="620" y="120" width="520" height="8" rx="4" fill="#3ad0ff"/>
+  <g transform="translate(670 190)" fill="none" stroke="#84478d" stroke-width="4"><path d="M-32 0s13-22 32-22S32 0 32 0 19 22 0 22-32 0-32 0z"/><circle r="9"/></g>
+  <text x="720" y="200" font-size="28" font-weight="700" fill="#5b2a66">Our Vision</text>
+  <text font-size="19" fill="#1d1a22"><tspan x="650" y="260">The most trusted marketing support and</tspan><tspan x="650" y="290">sales staffing partner for the electronics</tspan><tspan x="650" y="320">and appliance industry in the Philippines.</tspan></text>
+  <g font-size="22" font-weight="700" text-anchor="middle">
+    <rect x="60" y="420" width="250" height="140" rx="16" fill="#5b2a66"/>
+    <text x="185" y="482" fill="#fff">Integrity</text><text x="185" y="514" font-size="15" font-weight="400" fill="#ddc6e2">Honest work, fair treatment</text>
+    <rect x="337" y="420" width="250" height="140" rx="16" fill="#5b2a66"/>
+    <text x="462" y="482" fill="#fff">Teamwork</text><text x="462" y="514" font-size="15" font-weight="400" fill="#ddc6e2">Store, office and partners</text>
+    <rect x="613" y="420" width="250" height="140" rx="16" fill="#5b2a66"/>
+    <text x="738" y="482" fill="#fff">Growth</text><text x="738" y="514" font-size="15" font-weight="400" fill="#ddc6e2">Training and mentoring</text>
+    <rect x="890" y="420" width="250" height="140" rx="16" fill="#5b2a66"/>
+    <text x="1015" y="482" fill="#fff">Customer focus</text><text x="1015" y="514" font-size="15" font-weight="400" fill="#ddc6e2">Great service builds brands</text>
+  </g>
+  <text x="600" y="604" font-size="15" fill="#fff" text-anchor="middle">Elite Jinzai Marketing Services Inc. · Makati City</text>
+</svg>
